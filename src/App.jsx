@@ -1,7 +1,15 @@
+
+import HeroSection from "./components/sections/HeroSection";
+import TopSellingSection from "./components/sections/TopSellingSection";
+
 const App=()=>{
   return(
     <>
-    <div>App</div>
+    <div>
+      
+      <HeroSection />
+      <TopSellingSection />
+    </div>
     </>
   );
 }
