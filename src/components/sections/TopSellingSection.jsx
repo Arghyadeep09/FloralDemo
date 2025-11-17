@@ -4,15 +4,16 @@ import {  demoProductData } from '../../utils/demoProductData.js';
 import SectionTitle from '../ui/SectionTitle'; 
 import { demoReviewData } from '../../utils/demoReviewData.js';
 import ReviewCard from '../ui/ReviewCard.jsx';
+import CarousalCard from '../ui/CarousalCard.jsx';
 const TopSellingSection = () => {
   return (
     
     <section className='w-full mx-auto max-w-[1728px] px-[47px] py-[100px] bg-[#1b2316]'> 
 
-      <SectionTitle>Our Top Selling Plants</SectionTitle>
+      <SectionTitle title="Our Top Selling Plants" className="mt-[440px] mb-[197px]"/>
 
 
-    {/* Thi is the product card section */}
+    {/* This is the product card section */}
       <div 
         className='grid 
                    grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(512px,1fr))]
@@ -31,7 +32,7 @@ const TopSellingSection = () => {
         ))}
       </div>
 
-      <SectionTitle>Our Top Selling Plants</SectionTitle>
+      <SectionTitle title="Customer Review" className="mt-[310px] mb-[174px]"/>
 
       {/* This is the review card section*/}
 
@@ -50,6 +51,10 @@ const TopSellingSection = () => {
                     ))}
         
       </div>   
+
+      <SectionTitle title="Our Best o2" className="mt-[233px] mb-[242px]"/>
+
+      <CarousalCard/>
     </section>
   );
 };

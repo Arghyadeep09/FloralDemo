@@ -1,12 +1,11 @@
 
 
 const Button = (props) => {
-  const {content, icon, className=""}=props;
+  const {content }=props;
   return (
     <>
-     <button className=" border-white/20 rounded-xl text-white pt-[15] pb-[15] bg-transparent" > 
-      {icon && <span className="">{icon}</span>}
-      {content && <span>{content}</span>}
+     <button className=" border-2 border-white rounded-xl text-white py-[15px] px-[58px] bg-transparent text-[28px] font-normal h-16 w-[217px] font-['Inter'] items-center" > 
+    {content}
     </button>
     </>
   )
