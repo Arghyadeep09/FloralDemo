@@ -37,20 +37,18 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="flex gap-[59px]">
+        <div className="flex gap-[59px] items-center">
           <img
             src="/images/searchicon.svg"
             alt="search icon"
-            className=" w-[26px] h-[26px]
-                 pt-[68px] "
+            className="w-[26px] h-[26px]"
           ></img>
           <img
-            src="/images/bagicon.png"
+            src="/images/bagicon.svg"
             alt="bag icon"
-            className="w-[26px] h-[26px] 
-                 pt-[68px]"
+            className="w-[26px] h-[26px]"
           ></img>
-          <button> c</button>
+          <button></button> /* need to complete */
         </div>
       </div>
     </div>

@@ -8,9 +8,7 @@ const HeroSection = () => {
           <Navbar />
         </div>
       </div>
-      {/* <div className="bg-[url('/images/homePlant.jpg')] bg-cover bg-center w-[1728px] h-[2592px]">
-       <Navbar /> 
-       </div> */}
+      
     </>
   );
 };

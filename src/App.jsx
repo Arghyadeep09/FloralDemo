@@ -1,4 +1,5 @@
 
+import Footer from "./components/layout/Footer";
 import HeroSection from "./components/sections/HeroSection";
 import TopSellingSection from "./components/sections/TopSellingSection";
 
@@ -9,6 +10,7 @@ const App=()=>{
       
       <HeroSection />
       <TopSellingSection />
+      
     </div>
     </>
   );
