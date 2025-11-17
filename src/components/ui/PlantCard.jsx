@@ -17,7 +17,7 @@ const PlantCard = ({
     <div
       className={`
         relative 
-        w-full  max-w-[512px] mx-auto
+        w-full  max-w-lg mx-auto
         h-[644px]
         overflow-visible
       `}
@@ -59,7 +59,7 @@ const PlantCard = ({
           flex flex-col
           justify-end
           pt-[200px]
-          pb-[40px]
+          pb-10
           px-[66px]"
         style={{ marginTop: "-100px", paddingBottom: "20px" }}
       >
