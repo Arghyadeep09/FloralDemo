@@ -48,7 +48,7 @@ const Navbar = () => {
             alt="bag icon"
             className="w-[26px] h-[26px]"
           ></img>
-          <button></button> /* need to complete */
+          <button></button> 
         </div>
       </div>
     </div>

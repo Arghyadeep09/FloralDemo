@@ -5,21 +5,28 @@ import SectionTitle from '../ui/SectionTitle';
 import { demoReviewData } from '../../utils/demoReviewData.js';
 import ReviewCard from '../ui/ReviewCard.jsx';
 import CarousalCard from '../ui/CarousalCard.jsx';
+import Footer from '../layout/Footer.jsx';
 const TopSellingSection = () => {
   return (
-    
-    <section className='w-full mx-auto max-w-[1728px] px-[47px] py-[100px] bg-[#1b2316]'> 
+    <div className='w-full bg-[#62ff00]'>
+    <section className=' mx-auto max-w-[1728px] w-full  pt-44 bg-[#1b2316]'> 
 
-      <SectionTitle title="Our Top Selling Plants" className="mt-[440px] mb-[197px]"/>
+<div className='w-full text-center '>
+      <SectionTitle title="Our Top Selling Plants" className="mb-[197px]" />
+      </div>
 
 
     {/* This is the product card section */}
       <div 
-        className='grid 
-                   grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(512px,1fr))]
-                   gap-x-[50px] gap-y-[185px] 
-                   max-w-[1728px] w-full mx-auto 
-                   mt-16' 
+        className='grid
+        grid-cols-1
+        gap-y-[120px] gap-x-[50px]
+        max-w-[1728px] w-full mx-auto
+        mt-16
+        md:grid-cols-[repeat(auto-fit,512px)]
+        justify-center
+      "
+                   ' 
       >
         {demoProductData.map((item) => (
           <PlantCard 
@@ -32,8 +39,9 @@ const TopSellingSection = () => {
         ))}
       </div>
 
+<div className='w-full text-center '>
       <SectionTitle title="Customer Review" className="mt-[310px] mb-[174px]"/>
-
+</div>
       {/* This is the review card section*/}
 
       <div className='grid 
@@ -51,11 +59,13 @@ const TopSellingSection = () => {
                     ))}
         
       </div>   
-
+<div className='w-full text-center '>
       <SectionTitle title="Our Best o2" className="mt-[233px] mb-[242px]"/>
-
+</div>
       <CarousalCard/>
+      <Footer/>
     </section>
+    </div>
   );
 };
 

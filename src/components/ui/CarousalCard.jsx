@@ -33,11 +33,13 @@ const CarousalCard = () => {
 
   return (
     <>
-
+    
+     
       <div className="
         p-[3px] 
         rounded-[40px] 
         bg-[linear-gradient(90deg,#ffffff44,#00000000,#ffffff33)]
+        ml-[88px] mr-10
       ">
         
         
@@ -67,11 +69,11 @@ const CarousalCard = () => {
               {currentSlide.title}
             </h2>
 
-            <p className="text-[28px] pb-[42px] text-white font-medium leading-relaxed font-['Inter']">
+            <p className="text-[28px] pb-[42px] text-white font-medium leading-relaxed font-['Inter']  tracking-[0%]">
               {currentSlide.text1}
             </p>
 
-            <p className="text-[28px] pb-2 text-white font-medium leading-relaxed font-['Inter']">
+            <p className="text-[28px] pb-2 text-white font-medium leading-relaxed font-['Inter']  tracking-[0%]">
               {currentSlide.text2}
             </p>
 
@@ -89,6 +91,12 @@ const CarousalCard = () => {
 
         </div>
       </div>
+      <div className='flex justify-center items-center mt-[133px]'>
+        
+        <img src="/images/Group 31.svg " alt="Dot" />
+        
+      </div>
+      
     </>
   )
 }
