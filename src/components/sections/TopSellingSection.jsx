@@ -40,20 +40,16 @@ const TopSellingSection = () => {
                    gap-x-[50px] gap-y-[185px] 
                    max-w-[1728px] w-full mx-auto '>
 
-                    {demoReviewData.map((data)=>{
+                    {demoReviewData.map((data)=>(
                       <ReviewCard
                       key={data.id}
                       name={data.name}
                       rating={data.rating}
                       image={data.image}
                       review={data.review}/>
-                    })}
+                    ))}
         
       </div>   
-
-      
-
-
     </section>
   );
 };

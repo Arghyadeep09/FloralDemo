@@ -49,8 +49,8 @@ const PlantCard = ({ name, description, price, image, cardBackgroundUrl = "/imag
         <div className='pl-[66px] pr-[74px]'>
             <p className='text-gray-300 text-[24px] mt-2'>{description}</p>
         </div>
-        <div className='flex justify-between items-center pl-[66px] pr-[74px] mt-4'>
-          <span className='text-white font-normal text-[38px]'>
+        <div className='flex justify-between items-center pl-[66px] pr-[74px] mt-1  '>
+          <span className='text-white font-normal text-[38px] '>
             Rs. {price}
           </span>
           <CartButton />
