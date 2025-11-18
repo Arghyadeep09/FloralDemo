@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "../layout/Navbar.jsx";
 import Button from "../ui/Button.jsx";
-import PlantCard from "../ui/PlantCard.jsx";
 import SectionTitle from "../ui/SectionTitle.jsx";
 import CartButton from "../ui/CartButton.jsx";
 import PlantCarousal from "../ui/PlantCarousal.jsx";
 const HeroSection = () => {
   return (
     <>
-      <div className="bg-[url('/images/homePlant.jpg')] bg-cover bg-center w-full h-[2592px]">
+      <div className="bg-[url('/images/homePlant.jpg')] bg-cover bg-center w-full ">
+        <div className="max-w-screen-2xl w-full mx-auto">
         <div className="max-w-screen-2xl w-full mx-auto ">
           <Navbar />
         </div>
@@ -16,11 +16,11 @@ const HeroSection = () => {
         {/*Top section*/}
         <div className="flex justify-between">
           <div>
-            <div className="max-h-[280px] max-w-[802px] ml-[43px] mt-[147px] mb-[173px]">
-              <h2 className="h-[143px] text-[118px] font-semibold font-['Inter'] text-[#ffffff]  opacity-75 ">
+            <div className="w-full max-w-[802px] ml-[43px] mt-[147px] mb-[173px]">
+              <h2 className=" text-[118px] font-semibold font-['Inter'] text-[#ffffff]  opacity-75 ">
                 Earth’s Exhale
               </h2>
-              <p className="h-14 text-[23px] font-medium leading-[100%] tracking-[0%] text-[#ffffff] opacity-75">
+              <p className=" text-[23px] font-medium leading-[100%] tracking-[0%] text-[#ffffff] opacity-75">
                 "Earth Exhale" symbolizes the purity and vitality of the Earth's
                 natural environment and its essential role in sustaining life.
               </p>
@@ -81,50 +81,60 @@ const HeroSection = () => {
         </div>
 
         {/**Bottom section containing two cards */}
-
-        <div className="w-full text-center ">
-          <SectionTitle title="Our Best o2" className="mt-[83px] mb-[79px]" />
-        </div>
-
-        <div className="max-h-[526px] max-w-[1619px] border-2 border-amber-50 backdrop-blur-[15px] mx-[55px] rounded-[120px] flex justify-between items-center "> 
-          
-          <img src="/images/homepic1.svg" alt="Lily" className="max-w-[601px] max-h-[732px] -mt-[150px]" /> 
-
-          <div>
-
-            <h2 className="h-[46px]  text-[38px] text-[#ffffff] font-semibold font-['Inter']
-             mb-[34px] ">For Your Desks Decorations</h2>
-            <p className="h-12 w-[732px] text-[20px] text-[#ffffff] font-semibold font-['Inter']
-             mb-6 mr-[45px] leading-[100%]">I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!</p>
-            <p className="w-[171px] h-[46px] text-[38px] text-[#ffffff] font-semibold font-['Inter'] mb-6">Rs. 599/-</p>
-
-            <div className="flex items-center gap-8">
-              <Button content="Explore"/>
-              <CartButton className="h-16 w-16"/>
+        <div className="flex flex-col gap-[79px] pb-[117px]">
+            <div className="w-full text-center ">
+              <SectionTitle title="Our Trendy plants" className="mt-[83px] " />
             </div>
-          </div> 
-        
+
+          <div className="flex flex-col gap-[127px] ">
+
+                  <div className="max-h-[526px] max-w-[1619px] border-2 border-amber-50 backdrop-blur-[15px] mx-[55px] rounded-[120px] flex justify-between items-center "> 
+
+                    <div className="flex gap-[179px] items-center">
+                    <img src="/images/homepic1.svg" alt="Lily" className="max-w-[601px] max-h-[732px] -mt-[150px]" /> 
+
+                    <div>
+
+                      <h2 className="  text-[38px] text-[#ffffff] font-semibold font-['Inter']
+                      mb-[34px] ">For Your Desks Decorations</h2>
+                      <p className=" text-[20px] text-[#ffffff] font-semibold font-['Inter']
+                      mb-6 mr-[45px] leading-[100%]">I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!</p>
+                      <p className=" text-[38px] text-[#ffffff] font-semibold font-['Inter'] mb-6">Rs. 599/-</p>
+
+                      <div className="flex items-center gap-8">
+                        <Button content="Explore"/>
+                        <CartButton className="h-16 w-16"/>
+                      </div>
+                    </div> 
+                  
+                  </div>
+                  </div>
+
+                <div className="max-h-[526px] max-w-[1619px] border-2 border-amber-50 backdrop-blur-[15px] mx-[55px] rounded-[120px] flex justify-between items-center  "> 
+                    
+                  <div className="flex gap-[113px] items-center">
+                  <div className="ml-[72px]">
+                      <h2 className="h-[46px]  text-[38px] text-[#ffffff] font-semibold font-['Inter']
+                      mb-[34px] ">For Your Desks Decorations</h2>
+                      <p className="h-12 w-[732px] text-[20px] text-[#ffffff] font-semibold font-['Inter']
+                      mb-6 mr-[45px] leading-[100%]">The greenery adds a touch of nature and serenity to my desk, making it feel more inviting and calming</p>
+                      <p className=" h-[46px] text-[38px] text-[#ffffff] font-semibold font-['Inter'] mb-6">Rs. 399/-</p>
+
+                      <div className="flex items-center gap-8">
+                        <Button content="Explore"/>
+                        <CartButton className="h-16 w-16"/> 
+                      </div>
+                    </div> 
+                    <img src="/images/homepic2.svg" alt="Lily" className="max-w-[732px] max-h-[732px] -mt-[150px] -ml-[55px] " /> 
+
+                    </div>
+
+                </div>
+
+          </div>
         </div>
-
-        <div className="max-h-[526px] max-w-[1619px] border-2 border-amber-50 backdrop-blur-[15px] mx-[55px] rounded-[120px] flex justify-between items-center mt-[127px] "> 
-           
-         <div className="ml-[72px]">
-            <h2 className="h-[46px]  text-[38px] text-[#ffffff] font-semibold font-['Inter']
-             mb-[34px] ">For Your Desks Decorations</h2>
-            <p className="h-12 w-[732px] text-[20px] text-[#ffffff] font-semibold font-['Inter']
-             mb-6 mr-[45px] leading-[100%]">The greenery adds a touch of nature and serenity to my desk, making it feel more inviting and calming</p>
-            <p className="w-[171px] h-[46px] text-[38px] text-[#ffffff] font-semibold font-['Inter'] mb-6">Rs. 599/-</p>
-
-            <div className="flex items-center gap-8">
-              <Button content="Explore"/>
-              <CartButton className="h-16 w-16"/> 
-            </div>
-          </div> 
-          <img src="/images/homepic2.svg" alt="Lily" className="max-w-[732px] max-h-[732px] -mt-[150px] -ml-[55px] " /> 
-        </div>
-
-        
       </div>
+    </div>
     </>
   );
 };

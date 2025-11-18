@@ -2,8 +2,8 @@ export const demoReviewData=[
    {
     id: 1,
     name: "Shelly Russel",
-    rating: "★★★★★ 4.5",
-    image: "/images/reviews/shelly.png",
+    rating: "/images/Group 7.svg ",
+    image: "/images/p1.png",
     review:
       "Just got my hands on some absolutely awesome plants, and I couldn’t be happier!",
   },
@@ -11,8 +11,8 @@ export const demoReviewData=[
   {
     id: 2,
     name: "Lula Rolfson",
-    rating: "★★★★★ 4.5",
-    image: "/images/reviews/lula.png",
+    rating: "/images/Group 7.svg ",
+    image: "/images/p2.jpg",
     review:
       "Each one has its own unique charm and personality, and they’ve already started brightening up my space. The vibrant colors and fresh greenery make such a huge difference in my home.",
   },
@@ -20,8 +20,8 @@ export const demoReviewData=[
   {
     id: 3,
     name: "Carol Huels",
-    rating: "★★★★★ 4.5",
-    image: "/images/reviews/carol.png",
+    rating: "/images/Group 7.svg ",
+    image: "/images/p3.png",
     review:
       "It's like bringing a little piece of nature indoors. Definitely worth the investment—my plant collection has never looked better!",
   },

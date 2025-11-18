@@ -8,7 +8,7 @@ import CarousalCard from "../ui/CarousalCard.jsx";
 import Footer from "../layout/Footer.jsx";
 const TopSellingSection = () => {
   return (
-    <div className="w-full bg-[#62ff00]">
+    <div className="w-full bg-[#1b2316]">
       <section className=" mx-auto max-w-[1728px] w-full  pt-44 bg-[#1b2316]">
         <div className="w-full text-center ">
           <SectionTitle title="Our Top Selling Plants" className="mb-[197px]" />
@@ -43,14 +43,18 @@ const TopSellingSection = () => {
             className="mt-[310px] mb-[174px]"
           />
         </div>
-        
+
         {/* This is the review card section*/}
 
         <div
-          className="grid 
-                   grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(512px,1fr))]
-                   gap-x-[50px] gap-y-[185px] 
-                   max-w-[1728px] w-full mx-auto "
+          className=" grid 
+                      grid-cols-1
+                      gap-y-10 md:gap-y-16 lg:gap-y-[185px]
+                      gap-x-2 md:gap-x-4 lg:gap-x-8
+                      w-full max-w-[1728px] mx-auto
+                      mt-10 md:mt-14 lg:mt-16
+                      md:grid-cols-[repeat(auto-fit,512px)]
+                      justify-center "
         >
           {demoReviewData.map((data) => (
             <ReviewCard

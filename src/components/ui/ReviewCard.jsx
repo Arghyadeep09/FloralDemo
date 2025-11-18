@@ -1,62 +1,58 @@
-import React from 'react';
+import React from "react";
 
 const ReviewCard = ({ name, rating, image, review }) => {
-  
-  // Standardized dimensions
-  const CARD_HEIGHT = 'h-[280px]'; 
-  
-  // Padding values measured from Figma for the Review Card's content area
-  // We'll use these in Tailwind syntax below.
-  const PADDING_TOP = 'pt-[35px]';
-  const PADDING_RIGHT_LEFT = 'px-[30px]';
-  const PADDING_BOTTOM = 'pb-[30px]';
-
   return (
-    <div 
-      // 1. Main Card Container: Position relative for stacking context
-      className={`relative w-full ${CARD_HEIGHT} overflow-hidden`}
+    <div
+     className={`
+        w-full max-w-lg 
+        h-[480px]
+        mx-auto 
+        overflow-hidden 
+        bg-cover bg-center
+      `}
+      style={{ backgroundImage: "url('/images/Rectangle 7.svg')"}}
     >
-      
-      {/* Background Layer (z-0) - Identical Structure */}
-      <img
-        src="/images/Rectangle 7.svg" 
-        alt="Review Card Background" 
-        className="absolute inset-0 w-full h-full object-fill z-0" 
-      />
-      
-      {/* 2. Content Layer (z-10): Absolute overlay covering the card area */}
-      {/* 💡 APPLY vertical padding (top/bottom) to this container. 
-           We will apply horizontal padding to the inner divs. */}
-      <div 
-        className={`absolute inset-0 z-10 flex flex-col ${PADDING_TOP} ${PADDING_BOTTOM}`}
+
+      {/* Content */}
+      <div
+        className="
+          pl-[58px] pr-[51px] pt-[90px] flex flex-col gap-[61px]
+        "
       >
-        
-        {/* Top Section: Avatar, Name, and Rating (Horizontal Flex) */}
-        {/* Apply horizontal padding here */}
-        <div className={`flex items-center space-x-4 mb-4 ${PADDING_RIGHT_LEFT}`}>
-          
-          {/* Avatar Image (Rounded) */}
-          <img 
-            src={image} 
-            alt={`Avatar of ${name}`} 
-            className='w-[50px] h-[50px] rounded-full object-cover'
+        {/* Top: avatar + name + rating */}
+        <div
+          className="
+            flex items-center space-x-3 gap-[38px]
+          "
+        >
+          <img
+            src={image}
+            alt="image"
+            className="
+              w-[88px] h-[88px]
+              rounded-full object-cover
+            "
           />
-          
-          {/* Name and Rating */}
-          <div className='flex flex-col'>
-            <h2 className='text-white font-semibold text-[20px]'>{name}</h2>
-            <p className='text-brand-accent text-sm mt-1'>{rating}</p>
+
+          <div className="flex flex-col">
+            <h2 className="text-white font-semibold text-[38px] ">
+              {name}
+            </h2>
+            <img src={rating} className="text-brand-accent w-[131px] text-xs sm:text-sm mt-1">
+              
+            </img>
           </div>
         </div>
-        
-        {/* Bottom Section: Review Text */}
-        {/* Apply horizontal padding here */}
-        <div className={`mt-4 ${PADDING_RIGHT_LEFT}`}>
-          <p className='text-gray-300 text-[16px] leading-relaxed line-clamp-4'>{review}</p>
+
+        {/* Bottom: review text */}
+        <div className="">
+          <p className="text-gray-300 text-[24px] leading-relaxed line-clamp-4 font-normal  ">
+            {review}
+          </p>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ReviewCard;
