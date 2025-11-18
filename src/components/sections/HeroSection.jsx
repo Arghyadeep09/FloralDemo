@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../layout/Navbar.jsx";
 import Button from "../ui/Button.jsx";
+import PlantCard from "../ui/PlantCard.jsx";
 const HeroSection = () => {
   return (
     <>
@@ -9,7 +10,8 @@ const HeroSection = () => {
           <Navbar />
         </div>
 
-        <div>
+        {/*Top section*/}
+        <div className="flex justify-between">
           <div>
             <div className="max-h-[280px] max-w-[802px] ml-[43px] mt-[147px] mb-[173px]">
               <h2 className="h-[143px] text-[118px] font-semibold font-['Inter'] text-[#ffffff]  opacity-75 ">
@@ -40,9 +42,7 @@ const HeroSection = () => {
             </div>
 
             <div className="p-px rounded-3xl border border-amber-50 w-[409px] h-[237px] backdrop-blur-[17px] ml-[43px] mt-[173px]">
-      
               <div className="w-full h-full rounded-[26px] p-[27px] pt-[37px]">
-               
                 <div className="flex gap-7 items-start">
                   <img
                     src="/images/portrait.png"
@@ -50,14 +50,11 @@ const HeroSection = () => {
                     className="h-16 w-16 rounded-full"
                   />
 
-                  
                   <div className="text-[#ffffff]">
-                   
                     <h3 className="text-[22px] font-semibold leading-tight mb-1">
                       Ronnie Hamill
                     </h3>
 
-                    
                     <img
                       src="images/Group 7.svg"
                       alt="rating"
@@ -66,7 +63,6 @@ const HeroSection = () => {
                   </div>
                 </div>
 
-              
                 <div className="text-[#ffffff] opacity-75 mt-6">
                   <p>
                     I can't express how thrilled I am with my new natural
@@ -78,8 +74,53 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div></div>
+          <div
+            className={` relative  w-full  max-w-lg mx-auto h-[644px] overflow-visible mt-[100px] mr-[52px]`}
+          >
+            <img
+              src="/images/Rectangle 6.svg"
+              alt="Decorative card background shape"
+              className="absolute inset-0 w-full h-full object-fill z-0"
+            />
+
+            <img
+              src="/images/Aglaonema plant.svg"
+              alt="plant"
+              className="  absolute -top-[70px] left-1/2 -translate-x-1/2 w-[459px] h-[459px] object-contain z-10 "
+            />
+            <div
+              className="relative z-1 h-full flex flex-col justify-end pt-[200px] pb-10 px-[66px]
+              ml-[81px] mr-6"
+              style={{ marginTop: "-170px" }}
+            >
+              <p
+                className="text-gray-300 text-[14px] md:text-[18px] lg:text-[23px]  md:mt-3
+               mt-0.5 opacity-75"
+              >
+                Indoor Plant
+              </p>
+
+              <h2 className="text-white font-normal text-[22px] md:text-[28px] lg:text-[38px] opacity-75 leading-[100%] tracking-[0%] w-[312px]">
+                Aglaonema plant
+              </h2>
+
+              <div className="flex justify-between items-center mt-1 md:mt-3 lg:mt-[15px] gap-[75px]">
+                <Button
+                  content="Buy Now"
+                  className="leading-[100%] tracking-[0%] opacity-75"
+                />
+                <img src="/images/right-arrow 2.svg" alt="right arrow" />
+              </div>
+            </div>
+            <div className="flex justify-center items-center mt-9">
+              <img src="/images/Group 31.svg " alt="Dot" />
+            </div>
+          </div>
         </div>
+
+        {/**Bottom section containing two cards */}
+
+        
       </div>
     </>
   );
