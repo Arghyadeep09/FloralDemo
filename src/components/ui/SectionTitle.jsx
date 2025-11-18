@@ -1,13 +1,6 @@
 import React from "react";
-// Assuming you import your SVGs (e.g., using @svgr/webpack or a similar loader)
-// If you manually copy-paste the SVG code, skip these lines.
-// SVGs will be used as <img> from public/images
-
 const SectionTitle = ({ title, className }) => {
-  // Determine the vertical shift for perfect alignment
-  // The design shows the top-edge of the text aligns with the top of the bracket line.
-  // Based on the 'Top' value in your design (26.47px), using a small top offset is still needed.
-  const topOffset = "3px"; // Adjust this value (e.g., 25px or 28px) until the alignment is perfect.
+  const topOffset = "3px"; 
 
   return (
     <div

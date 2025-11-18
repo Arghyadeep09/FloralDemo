@@ -1,9 +1,10 @@
 import React from 'react'
 
-const CartButton = () => {
+const CartButton = (props) => {
+  const{className}=props;
   return (
-    <div className='border-2 border-white rounded-xl h-[55px] w-[55px] opacity-75' >
-      <img src="/images/bagicon.svg" alt="bag icon" className=' p-3.5 ' />
+    <div className={`border-2 border-white rounded-xl  ${className}`} >
+      <img src="/images/bag.png" alt="bag icon" className=' p-3.5 ' />
     </div>
   )
 }
