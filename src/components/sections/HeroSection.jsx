@@ -86,81 +86,85 @@ const HeroSection = () => {
           {/**Bottom section containing two cards */}
           <div className="flex flex-col gap-[79px] pb-[117px]">
             <div className="w-full text-center ">
-              <SectionTitle title="Our Trendy plants" className="mt-[83px] " />
+              <SectionTitle title="Our Trendy plants" className="mt-[50px] md:mt-[83px] " />
             </div>
 
-            <div className="flex flex-col gap-[127px] mx-[55px] ">
-              <div className=" border-2 border-amber-50 backdrop-blur-[15px]  rounded-[120px] flex justify-between items-center ">
-                <div className="flex gap-[179px] items-center">
+            <div className="flex flex-col gap-[127px] mx-[30px] md:mx-[55px] ">
+              <div className=" border-2 border-amber-50/30 backdrop-blur-[15px]  rounded-[120px] flex  items-center ">
+                <div className="flex flex-col md:flex-row gap-[5px] md:gap-[179px] items-center">
+                  
                   <img
                     src="/images/homepic1.svg"
                     alt="Lily"
-                    className="max-w-[601px] max-h-[732px] -mt-[150px]"
+                    className="max-w-[300px] md:max-w-[601px] max-h-[300px] md:max-h-[732px] 
+                    -mt-[110px] md:-mt-[150px] "
                   />
 
-                  <div className="mr-[45px] flex flex-col gap-[34px]">
+                  <div className="mr-0 md:mr-[45px] flex flex-col gap-[15px] md:gap-[34px] mx-6 md:mx-0 ">
                     <h2
-                      className="  text-[38px] text-[#ffffff] font-semibold font-['Inter']
+                      className=" text-[20px] md:text-[38px] text-[#ffffff] font-semibold font-['Inter']
                           "
                     >
                       For Your Desks Decorations
                     </h2>
 
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-2 md:gap-6">
                       <p
-                        className=" text-[20px] text-[#ffffff] font-semibold font-['Inter']
-                                  leading-[100%]"
+                        className=" text-[13px] md:text-[20px] text-[#ffffff] font-normal md:font-semibold font-['Inter']
+                                 leading-3.5 md:leading-[100%]"
                       >
                         I recently added a beautiful desk decoration plant to my
                         workspace, and it has made such a positive difference!
                       </p>
-                      <p className=" text-[38px] text-[#ffffff] font-semibold font-['Inter'] ">
+                      <p className=" text-[20px] md:text-[38px] text-[#ffffff] font-semibold font-['Inter'] ">
                         Rs. 599/-
                       </p>
 
-                      <div className="flex items-center gap-8">
-                        <Button content="Explore" />
-                        <CartButton className="h-16 w-16" />
+                      <div className="flex items-center gap-[15px] md:gap-8 pb-[50px] md:pb-0">
+                        <Button content="Explore"  />
+                        <CartButton className="h-[30px] md:h-16 w-[30px] md:w-16" />
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
 
-              <div className=" border-2 border-amber-50 backdrop-blur-[15px]  rounded-[120px] flex justify-between items-center  ">
-                <div className="flex gap-[113px] items-center">
-                  <div className="ml-[72px] flex flex-col gap-[34px]">
-                    <h2
-                      className="  text-[38px] text-[#ffffff] font-semibold font-['Inter']
-                          "
-                    >
-                      For Your Desks Decorations
-                    </h2>
+              <div className=" border-2 border-amber-50/30 backdrop-blur-[15px] rounded-[120px]">
+                <div className="flex flex-col md:flex-row gap-[130px] md:gap-[113px] items-center">
 
-                    <div className="flex flex-col gap-6">
-                      <p
-                        className=" text-[20px] text-[#ffffff] font-semibold font-['Inter']
-                                leading-[100%]"
-                      >
-                        The greenery adds a touch of nature and serenity to my
-                        desk, making it feel more inviting and calming
-                      </p>
-                      <p className="  text-[38px] text-[#ffffff] font-semibold font-['Inter'] ">
-                        Rs. 399/-
-                      </p>
+                    <div className="ml-5 md:ml-[72px]  flex flex-col gap-[15px] md:gap-[34px] mx-6 md:mx-0 ">
+                          <h2
+                            className="  text-[20px] md:text-[38px] text-[#ffffff] font-semibold font-['Inter'] pt-[60px] md:pt-0
+                                "
+                          >
+                            For Your Desks Decorations
+                          </h2>
 
-                      <div className="flex items-center gap-8">
-                        <Button content="Explore" />
-                        <CartButton className="h-16 w-16" />
+                          <div className="flex flex-col gap-2 md:gap-6">
+                        <p
+                          className=" text-[13px] md:text-[20px] text-[#ffffff] font-normal md:font-semibold font-['Inter']
+                                  leading-[100%]"
+                        >
+                          The greenery adds a touch of nature and serenity to my
+                          desk, making it feel more inviting and calming
+                        </p>
+                        <p className="  text-[20px] md:text-[38px] text-[#ffffff] font-semibold font-['Inter'] ">
+                          Rs. 399/-
+                        </p>
+
+                        <div className="flex items-center gap-[15px] md:gap-8">
+                          <Button content="Explore" />
+                          <CartButton className="h-[30px] md:h-16 w-[30px] md:w-16" />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <img
-                    src="/images/homepic2.svg"
-                    alt="Lily"
-                    className="max-w-[732px] max-h-[732px] -mt-[150px] -ml-[55px] "
-                  />
+                    <img
+                      src="/images/homepic2.svg"
+                      alt="Lily"
+                      className="max-w-[300px] md:max-w-[732px] max-h-[300px] md:max-h-[732px]  -mt-[150px]  md:-ml-[55px] -mb-[100px] md:mb-0"
+                    />
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ const Button = (props) => {
     if (content === 'Buy Now') {
       return 'pl-[30px] md:pl-[49px] pr-[20px] md:pr-[50px] pt-[8px] md:pt-[14px] pb-[8px] md:pb-[16px]'; 
     } else if (content === 'Explore') {
-      return 'px-[58px] py-[15px]'; 
+      return 'px-[35px] md:px-[58px] py-[10px] md:py-[15px]'; 
     }
     return ''; 
   };
