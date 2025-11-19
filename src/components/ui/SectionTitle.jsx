@@ -1,42 +1,32 @@
 import React from "react";
+
 const SectionTitle = ({ title, className }) => {
-  const topOffset = "3px"; 
 
   return (
     <div
       className={`
-        relative inline-flex items-center drop-shadow-lg text-white text-[55px] font-semibold font-['Inter'] h-[67px] ${
-          className || ""
-        }
+        relative inline-flex items-center justify-center drop-shadow-lg text-white font-semibol font-['Inter'] text-[24px] md:text-[55px] h-[45px] md:h-[67px]      
+        ${className || ""}
       `}
     >
-      {/* 1. LEFT BRACKET as image */}
-      <img
-        src="/images/Vector 5.svg"
-        alt="Bracket Left"
-        style={{
-          width: "61.5px",
-          height: "63px",
-          position: "absolute",
-          left: "-9px",
-          top: topOffset,
-        }}
+      {/* LEFT BRACKET */} 
+      <img 
+         src="/images/Vector 5.svg" 
+         alt="Bracket Left"
+         className={`
+           absolute w-[35px] h-9 -left-1.5 top-1.5 md:w-[61.5px] md:h-[63px] md:left-[-9px] md:top-[3px]
+         `}
       />
 
-      {/* 2. TITLE TEXT (Add padding to separate it from the brackets) */}
-      <span className="relative z-10 ">{title}</span>
+      <span className="relative z-10  ">{title}</span>
 
-      {/* 3. RIGHT BRACKET as image */}
+      {/* RIGHT BRACKET */}
       <img
         src="/images/Vector 6.svg"
         alt="Bracket Right"
-        style={{
-          width: "61.5px",
-          height: "63px",
-          position: "absolute",
-          right: "-10.5px",
-          top: topOffset,
-        }}
+        className={`
+           absolute w-[35px] h-9 -right-1.5 md:w-[61.5px] md:h-[63px] md:right-[-10.5px] md:top-[3px]
+         `}
       />
     </div>
   );

@@ -3,7 +3,7 @@ const Button = (props) => {
 
   const getContentSpecificStyles = () => {
     if (content === 'Buy Now') {
-      return 'pl-[49px] pr-[50px] pt-[14px] pb-[16px]'; 
+      return 'pl-[30px] md:pl-[49px] pr-[20px] md:pr-[50px] pt-[8px] md:pt-[14px] pb-[8px] md:pb-[16px]'; 
     } else if (content === 'Explore') {
       return 'px-[58px] py-[15px]'; 
     }
@@ -11,7 +11,7 @@ const Button = (props) => {
   };
   return (
     <>
-     <button className={` border-2 border-white rounded-xl text-white bg-transparent text-[28px] font-normal h-16 max-w-[217px] w-full font-['Inter'] flex items-center ${getContentSpecificStyles()} ${className || ''}`}> 
+     <button className={` border-2 border-white rounded-xl text-white bg-transparent text-[13px] md:text-[28px] font-normal h-[50px] md:h-16 max-w-[120px] md:max-w-[217px] w-full font-['Inter'] flex items-center ${getContentSpecificStyles()} ${className || ''}`}> 
     {content}
     </button>
     </>
