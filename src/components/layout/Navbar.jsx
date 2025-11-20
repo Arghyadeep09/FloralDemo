@@ -63,12 +63,12 @@ const Navbar = () => {
           <img
             src="/images/searchicon.svg"
             alt="search icon"
-            className="w-3 h-3 md:w-[15px] md:h-[15px] lg:w-[18px] lg:h-[18px] xl:w-[26px] xl:h-[26px]"
+            className="w-3 h-3 md:w-[15px] md:h-[15px] lg:w-[18px] lg:h-[18px] xl:w-[26px] xl:h-[26px] cursor-pointer"
           />
           <img
             src="/images/bagicon.svg"
             alt="bag icon"
-            className="w-3 h-3 md:w-[15px] md:h-[15px] lg:w-[18px] lg:h-[18px] xl:w-[26px] xl:h-[26px]"
+            className="w-3 h-3 md:w-[15px] md:h-[15px] lg:w-[18px] lg:h-[18px] xl:w-[26px] xl:h-[26px] cursor-pointer"
           />
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -111,12 +111,12 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#1a1a1a]/95 backdrop-blur-sm shadow-xl py-10 z-40 animate-fadeIn">
+        <div className="md:hidden absolute top-full left-0 w-full  backdrop-blur-[30px] shadow-xl py-10 z-40 animate-fadeIn">
           <ul className="flex flex-col items-center gap-8 text-[#FFFFFF]">
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="text-2xl font-normal font-['Indie_Flower'] cursor-pointer hover:text-green-400"
+                className="text-[15px] font-normal font-['Indie_Flower'] cursor-pointer hover:text-green-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
