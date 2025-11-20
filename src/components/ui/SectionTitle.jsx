@@ -5,7 +5,7 @@ const SectionTitle = ({ title, className }) => {
   return (
     <div
       className={`
-        relative inline-flex items-center justify-center drop-shadow-lg text-white font-semibol font-['Inter'] text-[24px] md:text-[55px] h-[45px] md:h-[67px]      
+        relative inline-flex items-center justify-center drop-shadow-lg text-white font-semibol font-['Inter'] text-[24px] md:text-[40px] lg:text-[55px] h-[45px] md:h-[67px]      
         ${className || ""}
       `}
     >
