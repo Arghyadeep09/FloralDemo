@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Button from "./Button";
 
 const CarousalCard = () => {
-
   const SLIDES_DATA = [
     {
       id: 1,
@@ -31,12 +30,10 @@ const CarousalCard = () => {
         "Perfect for busy lifestyles, these plants thrive in various lighting conditions and forgive occasional forgetfulness.",
       image: "images/o2SectionPic.svg",
     },
-   
   ];
 
   const TOTAL_SLIDES = SLIDES_DATA.length;
   const [currentSlideIndex, setCurrentSlideIndex] = useState(1);
-
 
   const currentSlide = SLIDES_DATA[currentSlideIndex - 1];
 
@@ -48,11 +45,8 @@ const CarousalCard = () => {
 
   return (
     <div className="w-full px-4 sm:px-6 xl:pl-[78px] xl:pr-10">
-      
       <div className="relative p-0.5 sm:p-[3px] rounded-[20px] sm:rounded-[30px] xl:rounded-[40px] bg-[linear-gradient(90deg,#ffffff44,#00000000,#ffffff33)] ">
-       
         <div className="w-full bg-[#272e22] flex flex-col xl:flex-row items-center rounded-[18px] sm:rounded-[28px] xl:rounded-[36px] ">
-          
           <div className="w-full xl:w-1/2 flex justify-center xl:justify-center relative">
             <img
               key={`img-${currentSlide.id}`}
@@ -65,20 +59,27 @@ const CarousalCard = () => {
             />
           </div>
           <div className="w-full xl:w-1/2 flex flex-col justify-center transition-all duration-700 ease-out px-6 sm:px-8 xl:pr-14 py-8 sm:py-12 xl:py-[135px]">
-            
-      
-            <h2 key={`title-${currentSlide.id}`} className="text-[20px] sm:text-[24px] md:text-[28px] xl:text-[36px] mb-6 sm:mb-8 xl:mb-[42px] font-semibold text-white leading-tight text-center xl:text-left opacity-75">
+            <h2
+              key={`title-${currentSlide.id}`}
+              className="text-[20px] sm:text-[24px] md:text-[28px] xl:text-[36px] mb-6 sm:mb-8 xl:mb-[42px] font-semibold text-white leading-tight text-center xl:text-left opacity-75"
+            >
               {currentSlide.title}
             </h2>
 
-            <p key={`text1-${currentSlide.id}`} className="text-[14px] sm:text-[16px] md:text-[18px] xl:text-[22px] mb-6 sm:mb-8 xl:mb-[42px] text-white font-medium leading-[150%] text-center xl:text-left opacity-75">
+            <p
+              key={`text1-${currentSlide.id}`}
+              className="text-[14px] sm:text-[16px] md:text-[18px] xl:text-[22px] mb-6 sm:mb-8 xl:mb-[42px] text-white font-medium leading-[150%] text-center xl:text-left opacity-75"
+            >
               {currentSlide.text1}
             </p>
 
-            <p key={`text2-${currentSlide.id}`} className="text-[14px] sm:text-[16px] md:text-[18px] xl:text-[22px] mb-2 text-white font-medium leading-[150%] text-center xl:text-left opacity-75">
+            <p
+              key={`text2-${currentSlide.id}`}
+              className="text-[14px] sm:text-[16px] md:text-[18px] xl:text-[22px] mb-2 text-white font-medium leading-[150%] text-center xl:text-left opacity-75"
+            >
               {currentSlide.text2}
             </p>
-            
+
             <div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-6 sm:gap-4 w-full">
               <Button
                 content="Explore"
@@ -98,7 +99,9 @@ const CarousalCard = () => {
                 </button>
 
                 <h3 className="text-white whitespace-nowrap opacity-75">
-                  <span className="text-[18px] sm:text-[20px]">0{currentSlideIndex}/</span>
+                  <span className="text-[18px] sm:text-[20px]">
+                    0{currentSlideIndex}/
+                  </span>
                   <span className="text-[14px] sm:text-[15px]">05</span>
                 </h3>
 

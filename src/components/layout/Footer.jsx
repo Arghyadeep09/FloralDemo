@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 const Footer = () => {
-
-   const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -14,48 +13,39 @@ const Footer = () => {
 
     if (!email.trim()) {
       setError("Email is required.");
-       setTimeout(() => {
-      setError("");
-    }, 3000);
+      setTimeout(() => {
+        setError("");
+      }, 3000);
       return;
     }
 
     if (!emailRegex.test(email)) {
       setError("Please enter a valid email address.");
 
-        setTimeout(() => {
-      setError("");
-    }, 3000);
-      
+      setTimeout(() => {
+        setError("");
+      }, 3000);
+
       return;
     }
     setSuccess("Subscribed successfully!");
     setEmail("");
-      setTimeout(() => {
-      setError("");
+    setTimeout(() => {
+      setSuccess("");
     }, 3000);
   };
-  return (
-   
-    <div className="w-full mt-20 xl:mt-[280px] pb-10">
-      
-      <div
-        className="max-w-[1728px] w-full mx-auto 
-                   grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
-                   gap-y-12 md:gap-y-16 xl:gap-x-[129px] xl:gap-y-20 
-                   text-white px-6 md:px-12 xl:px-20"
-      >
 
-        {/* --- Column 1: Brand Info --- */}
-        {/* Centered on mobile/tablet/laptop (lg), Left-aligned on XL */}
+  return (
+    <div className="w-full mt-20 xl:mt-[280px] pb-10">
+      <div
+        className="max-w-[1728px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+                   gap-y-12 md:gap-y-16 xl:gap-x-[129px] xl:gap-y-20 text-white px-6 md:px-12 xl:px-20"
+      >
         <div className="flex flex-col items-center xl:items-start gap-6 xl:gap-[43px]">
-          
-          {/* Logo Row */}
           <div className="flex items-center gap-[13px]">
             <img
               src="/images/logoPlant.png"
               alt="logo"
-              // Logo size stays small on lg, gets big on xl
               className="h-[60px] w-[60px] xl:h-[94px] xl:w-[94px]"
             />
             <h2 className="text-3xl xl:text-[45px] font-['Inter'] opacity-75">
@@ -63,10 +53,9 @@ const Footer = () => {
             </h2>
           </div>
 
-          {/* Description */}
           <p className="text-lg xl:text-[28px] font-medium leading-snug xl:leading-[100%] tracking-wide max-w-[580px] text-center xl:text-left">
-            "From lush indoor greens to vibrant outdoor blooms, our plants
-            are crafted to thrive and elevate your living environment."
+            "From lush indoor greens to vibrant outdoor blooms, our plants are
+            crafted to thrive and elevate your living environment."
           </p>
 
           {/* Social Icons */}
@@ -77,31 +66,24 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* --- Column 2: Quick Links --- */}
-        {/* Centered on lg (same as md), Left-aligned on xl */}
         <div className="flex flex-col items-center xl:items-start gap-6 xl:gap-[46px]">
           <p className="text-2xl xl:text-[28px] font-extrabold">Quick Link's</p>
           <ul className="text-lg xl:text-[24px] font-medium flex flex-col items-center xl:items-start gap-4 xl:gap-[26px] underline">
             <li className="cursor-pointer hover:text-gray-300">Home</li>
-            <li className="cursor-pointer hover:text-gray-300">Type’s Of plant’s</li>
+            <li className="cursor-pointer hover:text-gray-300">
+              Type’s Of plant’s
+            </li>
             <li className="cursor-pointer hover:text-gray-300">Contact</li>
             <li className="cursor-pointer hover:text-gray-300">Privacy</li>
           </ul>
         </div>
 
-        {/* --- Column 3: Newsletter --- */}
-        {/* Span: md:col-span-2 (Tablet fills width). 
-            Since we want lg to be like md, we let it inherit col-span-2.
-            We only switch to col-span-1 at xl.
-        */}
         <div className="flex flex-col h-full items-center xl:items-start md:col-span-2 xl:col-span-1 w-full">
           <p className="text-2xl xl:text-[28px] font-extrabold mb-6 xl:mb-[50px]">
             For Every Update.
           </p>
 
-          {/* Input Box */}
           <div className="relative h-auto min-h-[60px] xl:h-[74px] w-full max-w-[562px] rounded-lg mb-3 flex flex-wrap md:flex-nowrap items-center justify-between border-2 border-white p-1">
-
             <input
               type="text"
               value={email}
@@ -118,26 +100,20 @@ const Footer = () => {
             </button>
           </div>
 
-          {/* Error Message */}
           {error && (
-            <p className="text-red-400 text-sm md:text-base mb-3">
-              {error}
-            </p>
+            <p className="text-red-400 text-sm md:text-base mb-3">{error}</p>
           )}
 
-          {/* Success Message */}
           {success && (
             <p className="text-green-400 text-sm md:text-base mb-3">
               {success}
             </p>
           )}
 
-          {/* Copyright */}
           <p className="text-lg xl:text-[24px] font-medium mt-auto mb-10 xl:mb-[141px] text-center xl:text-left">
             FloraVision © All Rights Reserved
           </p>
         </div>
-
       </div>
     </div>
   );

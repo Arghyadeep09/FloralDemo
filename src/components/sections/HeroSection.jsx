@@ -20,7 +20,7 @@ const HeroSection = () => {
                 <h2 className="text-[44px] sm:text-[50px] md:text-[60px] lg:text-[60px] xl:text-[118px] font-semibold font-['Inter'] text-[#ffffff]  opacity-75 ">
                   Earth’s Exhale
                 </h2>
-                <p className=" text-[15px] sm:text-[16px] md:text-[19px] lg:text-[20px] xl:text-[23px] font-medium leading-4 md:leading-[100%] tracking-[0%] text-[#ffffff] opacity-75 mr-0 md:mr-[20px]">
+                <p className=" text-[15px] sm:text-[16px] md:text-[19px] lg:text-[20px] xl:text-[23px] font-medium leading-4 md:leading-[100%] tracking-[0%] text-[#ffffff] opacity-75 mr-0 md:mr-5">
                   "Earth Exhale" symbolizes the purity and vitality of the
                   Earth's natural environment and its essential role in
                   sustaining life.

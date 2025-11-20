@@ -5,7 +5,6 @@ const Navbar = () => {
 
   useEffect(() => {
     function handleResize() {
-      // Tailwind 'md' breakpoint is 768px by default
       if (window.innerWidth >= 768 && isMenuOpen) {
         setIsMenuOpen(false);
       }
@@ -24,11 +23,9 @@ const Navbar = () => {
     { name: "Contact", hasSpan: false },
   ];
 
-
   return (
     <div className="w-full relative z-50">
       <div className="max-w-[1728px] w-full mx-auto flex justify-between pt-8 md:pt-[57px] px-6 md:pl-[39px] md:px-10 items-center">
-        {/* --- LOGO --- */}
         <div className="flex items-center gap-2">
           <img
             src="/images/logoPlant.png"
@@ -40,7 +37,6 @@ const Navbar = () => {
           </h2>
         </div>
 
-        {/* --- DESKTOP MENU LINKS --- */}
         <div className="hidden md:block">
           <ul className="flex gap-10 xl:gap-[71px] text-[#FFFFFF]">
             {navLinks.map((link, index) => (
@@ -48,13 +44,21 @@ const Navbar = () => {
                 key={index}
                 className="flex items-center md:gap-2.5 xl:gap-5 text-xl md:text-[15px] lg:text-[18px] xl:text-2xl font-normal font-['Indie_Flower'] cursor-pointer hover:text-green-300 transition"
               >
-                {link.name} {link.hasSpan && <span><img src="/images/Polygon 1.svg" alt="dropdown" className="xl:h-[7px] xl:w-3 md:h-[5px] md:w-2.5" /></span>}
+                {link.name}
+                {link.hasSpan && (
+                  <span>
+                    <img
+                      src="/images/Polygon 1.svg"
+                      alt="dropdown"
+                      className="xl:h-[7px] xl:w-3 md:h-[5px] md:w-2.5"
+                    />
+                  </span>
+                )}
               </li>
             ))}
           </ul>
         </div>
 
-        {/* --- ICONS & HAMBURGER --- */}
         <div className="flex gap-4 lg:gap-[30px] xl:gap-[59px] items-center">
           <img
             src="/images/searchicon.svg"
@@ -66,8 +70,6 @@ const Navbar = () => {
             alt="bag icon"
             className="w-3 h-3 md:w-[15px] md:h-[15px] lg:w-[18px] lg:h-[18px] xl:w-[26px] xl:h-[26px]"
           />
-
-          {/* --- HAMBURGER BUTTON --- */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`text-white focus:outline-none md:pointer-events-none md:opacity-30 opacity-100 cursor-pointer`}
@@ -75,7 +77,6 @@ const Navbar = () => {
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? (
-              // Close Icon (X)
               <svg
                 className="md:w-[15px] md:h-[15px] w-3 h-3 lg:w-[18px] lg:h-[18px] xl:w-[26px] xl:h-[26px]"
                 fill="none"
@@ -91,7 +92,6 @@ const Navbar = () => {
                 />
               </svg>
             ) : (
-              // Hamburger Icon (Lines)
               <svg
                 className="md:w-[15px] md:h-[15px] w-3 h-3 lg:w-8 lg:h-8"
                 fill="none"

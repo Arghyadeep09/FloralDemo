@@ -1,5 +1,5 @@
-export const demoReviewData=[
-   {
+export const demoReviewData = [
+  {
     id: 1,
     name: "Shelly Russel",
     rating: "/images/Group 7.svg ",

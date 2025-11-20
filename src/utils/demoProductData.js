@@ -13,7 +13,7 @@ export const demoProductData = [
     description:
       "Hostas are primarily grown for their lush, decorative leaves, which come in a wide variety of shapes, sizes.",
     price: "380",
-    image:  "/images/Plantain Lilies.svg",
+    image: "/images/Plantain Lilies.svg",
   },
   {
     id: 3,
@@ -48,5 +48,3 @@ export const demoProductData = [
     image: "/images/Agave plant.svg",
   },
 ];
-
-
