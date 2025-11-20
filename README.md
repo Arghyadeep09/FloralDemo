@@ -5,7 +5,7 @@
 
 Live Demo
 
-    🔗 View Live Site - Add your Vercel/Render URL here
+    🔗 View Live Site - floral-demo.vercel.app
 
 Technical Stack
 
