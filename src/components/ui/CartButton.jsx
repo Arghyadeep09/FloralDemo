@@ -22,7 +22,7 @@ const CartButton = ({
 
   return (
     <div
-      className={`border-2 border-white rounded-xl flex items-center justify-center shrink-0 ${current.container} ${className}`}
+      className={`border-2 border-white rounded-xl flex items-center justify-center shrink-0 cursor-pointer ${current.container} ${className}`}
       {...props}
     >
       <img src={src} alt={alt} className={`${current.img}`} />

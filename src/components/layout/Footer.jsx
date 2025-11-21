@@ -36,7 +36,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full mt-20 xl:mt-[280px] pb-10">
+    <div className="w-full mt-20 xl:mt-[280px] pb-10" id="contact">
       <div
         className="max-w-[1728px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
                    gap-y-12 md:gap-y-16 xl:gap-x-[129px] xl:gap-y-20 text-white px-6 md:px-12 xl:px-20"

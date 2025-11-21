@@ -7,7 +7,8 @@ const ReviewCard = ({ name, rating, image, review }) => {
         w-full max-w-lg mx-auto overflow-hidden bg-cover bg-center h-[350px] sm:h-[480px] md:h-[480px] 
     [@media(min-width:395px)_and_(max-width:640px)]:h-[380px]
     [@media(min-width:395px)_and_(max-width:640px)]:max-w-[390px]
-   
+        transform transition-transform duration-300 ease-out hover:scale-105 cursor-pointer hover:z-20
+
      
       `}
       style={{ backgroundImage: "url('/images/Rectangle 7.svg')" }}

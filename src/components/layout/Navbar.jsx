@@ -16,12 +16,21 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [isMenuOpen]);
 
+   const handleNavClick = (target) => {
+    if (!target) return;
+    const el = document.getElementById(target);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+   
+    setIsMenuOpen(false);
+ };
   const navLinks = [
-    { name: "Home", hasSpan: false },
-    { name: "Plants Type", hasSpan: true },
-    { name: "More", hasSpan: false },
-    { name: "Contact", hasSpan: false },
-  ];
+    { name: "Home", target: "home", hasSpan: false },
+    { name: "Plants Type", target: "plants", hasSpan: true },
+    { name: "More", target: "more", hasSpan: false },
+    { name: "Contact", target: "contact", hasSpan:false},
+];
 
   return (
     <div className="w-full relative z-50">
@@ -42,6 +51,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <li
                 key={index}
+                onClick={() => handleNavClick(link.target)}
                 className="flex items-center md:gap-2.5 xl:gap-5 text-xl md:text-[15px] lg:text-[18px] xl:text-2xl font-normal font-['Indie_Flower'] cursor-pointer hover:text-green-300 transition"
               >
                 {link.name}
@@ -117,7 +127,8 @@ const Navbar = () => {
               <li
                 key={index}
                 className="text-[15px] font-normal font-['Indie_Flower'] cursor-pointer hover:text-green-400"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => handleNavClick(link.target)}
+
               >
                 {link.name}
               </li>

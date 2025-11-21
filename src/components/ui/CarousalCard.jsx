@@ -44,7 +44,7 @@ const CarousalCard = () => {
     setCurrentSlideIndex((i) => (i === TOTAL_SLIDES ? 1 : i + 1));
 
   return (
-    <div className="w-full px-4 sm:px-6 xl:pl-[78px] xl:pr-10">
+    <div className="w-full px-4 sm:px-6 xl:pl-[78px] xl:pr-10" id="more">
       <div className="relative p-0.5 sm:p-[3px] rounded-[20px] sm:rounded-[30px] xl:rounded-[40px] bg-[linear-gradient(90deg,#ffffff44,#00000000,#ffffff33)] ">
         <div className="w-full bg-[#272e22] flex flex-col xl:flex-row items-center rounded-[18px] sm:rounded-[28px] xl:rounded-[36px] ">
           <div className="w-full xl:w-1/2 flex justify-center xl:justify-center relative">

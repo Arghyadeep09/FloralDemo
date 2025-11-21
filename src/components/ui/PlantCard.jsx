@@ -16,7 +16,8 @@ const PlantCard = ({
       <img
         src={cardBackgroundUrl}
         alt="Decorative card background shape"
-        className="absolute inset-0 w-full h-full object-fill z-0"
+        className="absolute inset-0 w-full h-full object-fill z-0 transform transition-transform duration-300 ease-out hover:scale-105 cursor-pointer hover:z-20`}
+"
       />
 
       <img

@@ -7,7 +7,7 @@ import PlantCarousal from "../ui/PlantCarousal.jsx";
 const HeroSection = () => {
   return (
     <>
-      <div className="bg-[url('/images/homePlant.jpg')] bg-cover bg-center w-full ">
+      <div className="bg-[url('/images/homePlant.jpg')] bg-cover bg-center w-full " id="home">
         <div className="max-w-screen-2xl w-full mx-auto">
           <div className="max-w-screen-2xl w-full mx-auto ">
             <Navbar />

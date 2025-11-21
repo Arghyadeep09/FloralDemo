@@ -18,7 +18,7 @@ const TopSellingSection = () => {
         </div>
 
         {/* This is the product card section */}
-        <div className="grid grid-cols-1 gap-y-[50px] md:gap-y-[120px] gap-x-[50px] max-w-[1728px] w-full mx-auto mt-2 md:mt-16 md:grid-cols-[repeat(auto-fit,512px)] justify-center">
+        <div className="grid grid-cols-1 gap-y-[50px] md:gap-y-[120px] gap-x-[50px] max-w-[1728px] w-full mx-auto mt-2 md:mt-16 md:grid-cols-[repeat(auto-fit,512px)] justify-center " id="plants">
           {demoProductData.map((item) => (
             <PlantCard
               key={item.id}
@@ -39,7 +39,7 @@ const TopSellingSection = () => {
 
         {/* This is the review card section*/}
 
-        <div className=" grid grid-cols-1 gap-y-10 sm:gap-y-20 md:gap-y-16 lg:gap-y-[185px] gap-x-2 md:gap-x-4 lg:gap-x-8 w-full max-w-[1728px] mx-auto mt-10 md:mt-14 xl:mt-1 lg:grid-cols-[repeat(auto-fit,512px)] xl:grid-cols-[repeat(auto-fit,512px)]  justify-center ">
+        <div className=" grid grid-cols-1 gap-y-10 sm:gap-y-20 md:gap-y-16 lg:gap-y-[185px] gap-x-2 md:gap-x-4 lg:gap-x-8 w-full max-w-[1728px] mx-auto mt-10 md:mt-14 xl:mt-1 lg:grid-cols-[repeat(auto-fit,512px)] xl:grid-cols-[repeat(auto-fit,512px)]  justify-center " >
           {demoReviewData.map((data) => (
             <ReviewCard
               key={data.id}
