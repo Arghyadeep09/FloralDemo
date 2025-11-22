@@ -16,21 +16,21 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [isMenuOpen]);
 
-   const handleNavClick = (target) => {
+  const handleNavClick = (target) => {
     if (!target) return;
     const el = document.getElementById(target);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-   
+
     setIsMenuOpen(false);
- };
+  };
   const navLinks = [
     { name: "Home", target: "home", hasSpan: false },
     { name: "Plants Type", target: "plants", hasSpan: true },
     { name: "More", target: "more", hasSpan: false },
-    { name: "Contact", target: "contact", hasSpan:false},
-];
+    { name: "Contact", target: "contact", hasSpan: false },
+  ];
 
   return (
     <div className="w-full relative z-50">
@@ -102,20 +102,13 @@ const Navbar = () => {
                 />
               </svg>
             ) : (
-              <svg
-                className="md:w-[15px] md:h-[15px] w-3 h-3 lg:w-8 lg:h-8"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              <div className="flex flex-col  gap-1 sm:gap-[5px] md:gap-[7px] lg:gap-2 xl:gap-[9px] items-end">
+                <div
+                  className="w-[15px] sm:w-4 md:w-6 border-t-2 sm:border-t-2 md:border-t-[3px]  lg:w-[31px] border-white rounded-2xl lg:border-t-4"
+                ></div>
+                <div className="w-[9px] sm:w-[9px] md:w-4 border-t-2 sm:border-t-2 md:border-t-[3px] lg:w-[23px] lg:border-t-4 border-white rounded-2xl"></div>
+              
+              </div>
             )}
           </button>
         </div>
@@ -128,7 +121,6 @@ const Navbar = () => {
                 key={index}
                 className="text-[15px] font-normal font-['Indie_Flower'] cursor-pointer hover:text-green-400"
                 onClick={() => handleNavClick(link.target)}
-
               >
                 {link.name}
               </li>

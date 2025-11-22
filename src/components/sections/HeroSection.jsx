@@ -25,8 +25,9 @@ const HeroSection = () => {
                   Earth's natural environment and its essential role in
                   sustaining life.
                 </p>
-                <div className="flex items-center  gap-[21px] mt-[15px]">
+                <div className="flex items-center gap-[21px] mt-[15px]">
                   <Button content="Buy Now" className=" opacity-75 " />
+                  <div className="flex items-center gap-2 md:gap-[21px]">
                   <span>
                     <button className="h-[30px] lg:h-[70px] w-[30px] md:h-[50px]  md:w-[50px] lg:w-[70px] border-2 border-[#ffffff] rounded-full relative p-[13px] md:-[17px] lg:p-[18px] opacity-75  ">
                       <img
@@ -37,11 +38,11 @@ const HeroSection = () => {
                     </button>
                   </span>
                   <span
-                    className="text-[#ffffff] 
-                opacity-75 font-['Indie_Flower'] text-[14px] md:text-[18px] lg:text-[25px]"
+                    className="text-[#ffffff] opacity-75 font-['Indie_Flower'] text-[14px] md:text-[18px] lg:text-[25px]"
                   >
                     Live Demo...
                   </span>
+                  </div>
                 </div>
               </div>
 
