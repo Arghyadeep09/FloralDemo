@@ -16,6 +16,8 @@ Technical Stack
     JavaScript (ES6+)
 
     Vite – Fast development environment
+     
+    Git/Github
 
 📦 Setup Instructions
 
