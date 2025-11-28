@@ -121,16 +121,20 @@ Production Build
 📸 Screenshots
 
 Desktop view
-<img width="1862" height="882" alt="image" src="https://github.com/user-attachments/assets/70ecab1f-c428-483f-9908-d9b15ec4a1e5" />
+<img width="1892" height="893" alt="image" src="https://github.com/user-attachments/assets/c0dce853-0938-4b88-8b2b-913fa7fd0679" />
+
 
 Mobile view
-<img width="650" height="750" alt="image" src="https://github.com/user-attachments/assets/074743e0-ebd3-415c-bbee-fab752752f72" />
+<img width="687" height="805" alt="image" src="https://github.com/user-attachments/assets/22b4fa74-eb9f-4334-b0f6-e27dd48f4c27" />
+
 
 Tab view
-<img width="1212" height="773" alt="image" src="https://github.com/user-attachments/assets/8f8a5421-2116-44f7-8d1f-8f5edb0fc8e3" />
+<img width="1442" height="777" alt="image" src="https://github.com/user-attachments/assets/f9a51185-1703-4def-b31c-d10071da14a9" />
+
 
 
 🧑‍💻 Submitted By
 
     Arghyadeep Hari
     arghyahari2001@gmail.com
+
